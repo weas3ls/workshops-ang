@@ -1,0 +1,60 @@
+<mdb-sidenav-layout>
+    <mdb-sidenav #sidenav="mdbSidenav" [hidden]="false">
+        <ul class="sidenav-menu">
+            <mdb-sidenav-item>
+                <a class="sidenav-link"><i class="far fa-smile fa-fw me-3"></i><span>Link 1</span></a>
+            </mdb-sidenav-item>
+            <mdb-sidenav-item>
+                <a class="sidenav-link"><i class="fas fa-grin fa-fw me-3"></i><span>Category 1</span></a>
+                <ul class="sidenav-collapse" mdbCollapse>
+                    <li class="sidenav-item">
+                        <a class="sidenav-link">Link 2</a>
+                    </li>
+                    <li class="sidenav-item">
+                        <a class="sidenav-link">Link 3</a>
+                    </li>
+                </ul>
+            </mdb-sidenav-item>
+            <mdb-sidenav-item>
+                <a class="sidenav-link"><i class="fas fa-grin-wink fa-fw me-3"></i><span>Category 2</span></a>
+                <ul class="sidenav-collapse" mdbCollapse>
+                    <li class="sidenav-item">
+                        <a class="sidenav-link">Link 4</a>
+                    </li>
+                    <li class="sidenav-item">
+                        <a class="sidenav-link">Link 5</a>
+                    </li>
+                </ul>
+            </mdb-sidenav-item>
+            <mdb-sidenav-item>
+                <a class="sidenav-link"><i class="fas fa-grin-wink fa-fw me-3"></i><span>Category 3</span></a>
+                <ul class="sidenav-collapse" mdbCollapse>
+                    <li class="sidenav-item">
+                        <a class="sidenav-link">Link 5</a>
+                    </li>
+                    <li class="sidenav-item">
+                        <a class="sidenav-link">Link 6</a>
+                    </li>
+                </ul>
+            </mdb-sidenav-item>
+            <mdb-sidenav-item>
+                <a class="sidenav-link"><i class="fas fa-grin-wink fa-fw me-3"></i><span>Category 4</span></a>
+                <ul class="sidenav-collapse" mdbCollapse>
+                    <li class="sidenav-item">
+                        <a class="sidenav-link">Link 7</a>
+                    </li>
+                    <li class="sidenav-item">
+                        <a class="sidenav-link">Link 8</a>
+                    </li>
+                </ul>
+            </mdb-sidenav-item>
+        </ul>
+    </mdb-sidenav>
+    <mdb-sidenav-content #sidenavContent>
+        <!-- Toggler -->
+        <button #sidenavToggle class="btn btn-primary" (click)="sidenav.toggle()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <!-- Toggler -->
+    </mdb-sidenav-content>
+</mdb-sidenav-layout>
