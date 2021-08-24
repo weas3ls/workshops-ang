@@ -1,9 +1,33 @@
 <mdb-sidenav-layout>
-    <mdb-sidenav #sidenav="mdbSidenav" [hidden]="false">
-        <ul class="sidenav-menu">
+    <mdb-sidenav #sidenav="mdbSidenav">
+        <div class="text-center">
+            <img src="../../../assets/img/uwc-logo.png" alt="UWC logo" class="img-fluid" width="80%">
+            <hr>
+        </div>
+        <ul class="sidenav-menu h-75">
             <mdb-sidenav-item>
-                <a class="sidenav-link"><i class="far fa-smile fa-fw me-3"></i><span>Link 1</span></a>
+                <input type="text" name="search" id="search" placeholder="Search p/s:<value>">
             </mdb-sidenav-item>
+            <mdb-sidenav-item>
+                <a class="sidenav-link">Dashboard</a>
+            </mdb-sidenav-item>
+            <mdb-sidenav-item>
+                <a class="sidenav-link">Create Event</a>
+            </mdb-sidenav-item>
+            <mdb-sidenav-item>
+                <a class="sidenav-link">Edit Events</a>
+                <ul class="sidenav-collapse" mdbCollapse>
+                    <li class="sidenav-item">
+                        <a class="sidenav-link">Event 1</a>
+                        <a class="sidenav-link">Event 2</a>
+                        <a class="sidenav-link">Event 3</a>
+                    </li>
+                </ul>
+            </mdb-sidenav-item>
+            <mdb-sidenav-item>
+                <a href="" class="sidenav-link">Schools</a>
+            </mdb-sidenav-item>
+            <hr>
             <mdb-sidenav-item>
                 <a class="sidenav-link"><i class="fas fa-grin fa-fw me-3"></i><span>Category 1</span></a>
                 <ul class="sidenav-collapse" mdbCollapse>
@@ -23,17 +47,6 @@
                     </li>
                     <li class="sidenav-item">
                         <a class="sidenav-link">Link 5</a>
-                    </li>
-                </ul>
-            </mdb-sidenav-item>
-            <mdb-sidenav-item>
-                <a class="sidenav-link"><i class="fas fa-grin-wink fa-fw me-3"></i><span>Category 3</span></a>
-                <ul class="sidenav-collapse" mdbCollapse>
-                    <li class="sidenav-item">
-                        <a class="sidenav-link">Link 5</a>
-                    </li>
-                    <li class="sidenav-item">
-                        <a class="sidenav-link">Link 6</a>
                     </li>
                 </ul>
             </mdb-sidenav-item>

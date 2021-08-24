@@ -1,0 +1,82 @@
+<div class="row gx-5">
+    <div class="col">
+        <h2 class="text-center mb-5">Account Info</h2>
+        <form action="">
+            <mdb-form-control>
+                <input mdbInput class="form-control" type="text" name="firstName" id="firstName">
+                <label mdbLabel class="form-label" for="firstName">First Name</label>
+            </mdb-form-control>
+            <mdb-form-control class="my-4">
+                <input mdbInput class="form-control" type="text" name="lastName" id="lastName">
+                <label mdbLabel class="form-label" for="lastName">Last Name</label>
+            </mdb-form-control>
+            <mdb-form-control class="my-4">
+                <input mdbInput class="form-control" type="email" name="email" id="email">
+                <label mdbLabel class="form-label" for="email">Email</label>
+            </mdb-form-control>
+            <div class="d-flex justify-content-end">
+                <button class="btn btn-success" type="submit">Update</button>
+            </div>
+        </form>
+        <div class="d-flex justify-content-center mt-4">
+            <a routerLink="/account/change-password" class="btn btn-dark btn-lg" type="button">Change Password</a>
+        </div>
+    </div>
+    <div class="col">
+        <h2 class="text-center mb-5">Recent Actions</h2>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+    </div>
+</div>
+<hr>
+<div class="row gx-5">
+    <h2 class="text-center my-4">Current Users</h2>
+    <div class="col">
+        <p class="lead text-center mb-5">As an admin, you have the ability to view and make some adjustments to other user accounts. Do not abuse that privilege</p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item list-group-item-action">
+                <div class="d-flex justify-content-between">
+                    <a routerLink="/account/slug" class="h5 text-body">User name</a>
+                    <small>User email</small>
+                </div>
+                <p>Last login date</p>
+            </li>
+            <li class="list-group-item list-group-item-action">
+                <div class="d-flex justify-content-between">
+                    <a routerLink="/account/slug" class="h5 text-body">User name</a>
+                    <small>User email</small>
+                </div>
+                <p>Last login date</p>
+            </li>
+            <li class="list-group-item list-group-item-action">
+                <div class="d-flex justify-content-between">
+                    <a routerLink="/account/slug" class="h5 text-body">User name</a>
+                    <small>User email</small>
+                </div>
+                <p>Last login date</p>
+            </li>
+            <li class="list-group-item list-group-item-action">
+                <div class="d-flex justify-content-between">
+                    <a routerLink="/account/slug" class="h5 text-body">User name</a>
+                    <small>User email</small>
+                </div>
+                <p>Last login date</p>
+            </li>
+            <li class="list-group-item list-group-item-action">
+                <div class="d-flex justify-content-between">
+                    <a routerLink="/account/slug" class="h5 text-body">User name</a>
+                    <small>User email</small>
+                </div>
+                <p>Last login date</p>
+            </li>
+        </ul>
+    </div>
+    <div class="col d-flex align-items-center justify-content-center">
+        <a routerLink='/account/create-account' class="btn btn-dark btn-lg">Create New User</a>
+    </div>
+</div>

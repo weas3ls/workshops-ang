@@ -43,6 +43,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { LoginComponent } from './components/account/login/login.component';
+import { MyAccountComponent } from './components/account/my-account/my-account.component';
+import { ChangePasswordComponent } from './components/account/change-password/change-password.component';
+import { CreateAccountComponent } from './components/account/create-account/create-account.component';
 
 @NgModule({
     declarations: [
@@ -50,7 +53,10 @@ import { LoginComponent } from './components/account/login/login.component';
         HeaderComponent,
         FooterComponent,
         SidenavComponent,
-        LoginComponent
+        LoginComponent,
+        MyAccountComponent,
+        ChangePasswordComponent,
+        CreateAccountComponent
     ],
     imports: [
         BrowserModule,
