@@ -46,6 +46,7 @@ import { LoginComponent } from './components/account/login/login.component';
 import { MyAccountComponent } from './components/account/my-account/my-account.component';
 import { ChangePasswordComponent } from './components/account/change-password/change-password.component';
 import { CreateAccountComponent } from './components/account/create-account/create-account.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
     declarations: [
@@ -56,7 +57,8 @@ import { CreateAccountComponent } from './components/account/create-account/crea
         LoginComponent,
         MyAccountComponent,
         ChangePasswordComponent,
-        CreateAccountComponent
+        CreateAccountComponent,
+        DashboardComponent
     ],
     imports: [
         BrowserModule,
