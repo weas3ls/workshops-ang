@@ -1,0 +1,28 @@
+<div class="d-flex justify-content-between my-4">
+    <span></span>
+    <h1 class="mb-0">Schools</h1>
+    <a class="btn btn-dark mt-auto" routerLink="/add-school" type="button">Add School</a>
+</div>
+<div class="row">
+    <div class="col-12 col-lg-9 mx-auto">
+        <form action="">
+            <mdb-form-control>
+                <input mdbInput type="text" name="search-schools" class="form-control">
+                <label mdbLabel class="form-label" for="search-schools">Search</label>
+            </mdb-form-control>
+        </form>
+        <div class="list-group list-group-flush mt-4">
+            <li class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <a routerLink="/school-detail" class="h5 text-body">School Name</a>
+                    <small>IB Code ######</small>
+                </div>
+                <p class="mb-1">School city, state, country</p>
+                <p class="mb-1">Coordinator: Name</p>
+                <p class="mb-1">Coordinator email; Phone </p>
+                <p class="mb-1">Participants: ##</p>
+            </li>
+            <h5 class="text-center">No schools yet</h5>
+        </div>
+    </div>
+</div>

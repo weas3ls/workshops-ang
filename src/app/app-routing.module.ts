@@ -1,3 +1,6 @@
+import { SchoolDetailComponent } from './components/schools/school-detail/school-detail.component';
+import { SchoolListComponent } from './components/schools/school-list/school-list.component';
+import { SchoolAddComponent } from './components/schools/school-add/school-add.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -13,7 +16,7 @@ const routes: Routes = [
     {
         path: '',
         pathMatch: 'full',
-        redirectTo: 'account/login'
+        redirectTo: 'dashboard'
     },
     {
         path: 'account/login',
@@ -38,6 +41,18 @@ const routes: Routes = [
     {
         path: 'home',
         component: LandingPageComponent
+    },
+    {
+        path: 'add-school',
+        component: SchoolAddComponent
+    },
+    {
+        path: 'schools',
+        component: SchoolListComponent
+    },
+    {
+        path: 'school/:id',
+        component: SchoolDetailComponent
     }
 ]
 

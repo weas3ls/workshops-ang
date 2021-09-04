@@ -48,6 +48,11 @@ import { ChangePasswordComponent } from './components/account/change-password/ch
 import { CreateAccountComponent } from './components/account/create-account/create-account.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { SchoolAddComponent } from './components/schools/school-add/school-add.component';
+import { SchoolFormComponent } from './components/schools/school-form/school-form.component';
+import { SchoolListComponent } from './components/schools/school-list/school-list.component';
+import { SchoolDetailComponent } from './components/schools/school-detail/school-detail.component';
+import { ParticipantsModalComponent } from './components/schools/participants-modal/participants-modal.component';
 
 @NgModule({
     declarations: [
@@ -60,7 +65,12 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
         ChangePasswordComponent,
         CreateAccountComponent,
         DashboardComponent,
-        LandingPageComponent
+        LandingPageComponent,
+        SchoolAddComponent,
+        SchoolFormComponent,
+        SchoolListComponent,
+        SchoolDetailComponent,
+        ParticipantsModalComponent
     ],
     imports: [
         BrowserModule,

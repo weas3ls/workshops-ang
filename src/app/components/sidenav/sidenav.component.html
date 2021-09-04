@@ -1,7 +1,7 @@
 <mdb-sidenav-layout>
     <mdb-sidenav #sidenav="mdbSidenav">
         <div class="text-center">
-            <a [routerLink]="['/home']">
+            <a routerLink="/home">
                 <img src="../../../assets/img/uwc-logo.png" alt="UWC logo" class="img-fluid" width="80%">
             </a>
             <hr>
@@ -11,7 +11,7 @@
                 <input type="text" name="search" id="search" placeholder="Search p/s:<value>">
             </mdb-sidenav-item>
             <mdb-sidenav-item>
-                <a class="sidenav-link" [routerLink]="['/dashboard']">Dashboard</a>
+                <a class="sidenav-link" routerLink="/dashboard">Dashboard</a>
             </mdb-sidenav-item>
             <mdb-sidenav-item>
                 <a class="sidenav-link">Create Event</a>
@@ -27,7 +27,7 @@
                 </ul>
             </mdb-sidenav-item>
             <mdb-sidenav-item>
-                <a href="" class="sidenav-link">Schools</a>
+                <a routerLink="/schools" class="sidenav-link">Schools</a>
             </mdb-sidenav-item>
             <hr>
             <mdb-sidenav-item>
