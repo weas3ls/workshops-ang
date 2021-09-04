@@ -47,6 +47,7 @@ import { MyAccountComponent } from './components/account/my-account/my-account.c
 import { ChangePasswordComponent } from './components/account/change-password/change-password.component';
 import { CreateAccountComponent } from './components/account/create-account/create-account.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 @NgModule({
     declarations: [
@@ -58,7 +59,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
         MyAccountComponent,
         ChangePasswordComponent,
         CreateAccountComponent,
-        DashboardComponent
+        DashboardComponent,
+        LandingPageComponent
     ],
     imports: [
         BrowserModule,
