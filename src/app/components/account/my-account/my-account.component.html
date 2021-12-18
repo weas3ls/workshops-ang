@@ -3,15 +3,15 @@
         <h2 class="text-center mb-5">Account Info</h2>
         <form action="">
             <mdb-form-control>
-                <input mdbInput class="form-control" type="text" name="firstName" id="firstName">
+                <input mdbInput class="form-control" type="text" name="firstName" id="firstName" />
                 <label mdbLabel class="form-label" for="firstName">First Name</label>
             </mdb-form-control>
             <mdb-form-control class="my-4">
-                <input mdbInput class="form-control" type="text" name="lastName" id="lastName">
+                <input mdbInput class="form-control" type="text" name="lastName" id="lastName" />
                 <label mdbLabel class="form-label" for="lastName">Last Name</label>
             </mdb-form-control>
             <mdb-form-control class="my-4">
-                <input mdbInput class="form-control" type="email" name="email" id="email">
+                <input mdbInput class="form-control" type="email" name="email" id="email" />
                 <label mdbLabel class="form-label" for="email">Email</label>
             </mdb-form-control>
             <div class="d-flex justify-content-end">
@@ -33,11 +33,14 @@
         </ul>
     </div>
 </div>
-<hr>
+<hr />
 <div class="row gx-5">
     <h2 class="text-center my-4">Current Users</h2>
     <div class="col">
-        <p class="lead text-center mb-5">As an admin, you have the ability to view and make some adjustments to other user accounts. Do not abuse that privilege</p>
+        <p class="lead text-center mb-5">
+            As an admin, you have the ability to view and make some adjustments to other user accounts. Do not abuse
+            that privilege
+        </p>
         <ul class="list-group list-group-flush">
             <li class="list-group-item list-group-item-action">
                 <div class="d-flex justify-content-between">
@@ -77,6 +80,6 @@
         </ul>
     </div>
     <div class="col d-flex align-items-center justify-content-center">
-        <a routerLink='/account/create-account' class="btn btn-dark btn-lg">Create New User</a>
+        <a routerLink="/account/create-account" class="btn btn-dark btn-lg">Create New User</a>
     </div>
 </div>

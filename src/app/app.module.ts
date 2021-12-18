@@ -70,7 +70,7 @@ import { ParticipantsModalComponent } from './components/schools/participants-mo
         SchoolFormComponent,
         SchoolListComponent,
         SchoolDetailComponent,
-        ParticipantsModalComponent
+        ParticipantsModalComponent,
     ],
     imports: [
         BrowserModule,
@@ -110,11 +110,6 @@ import { ParticipantsModalComponent } from './components/schools/participants-mo
         MdbValidationModule,
     ],
     providers: [],
-    bootstrap: [
-        AppComponent,
-        HeaderComponent,
-        FooterComponent,
-        SidenavComponent
-    ]
+    bootstrap: [AppComponent, HeaderComponent, FooterComponent, SidenavComponent],
 })
-export class AppModule { }
+export class AppModule {}

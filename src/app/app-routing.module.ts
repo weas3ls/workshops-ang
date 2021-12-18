@@ -11,54 +11,52 @@ import { ChangePasswordComponent } from './components/account/change-password/ch
 import { MyAccountComponent } from './components/account/my-account/my-account.component';
 import { LoginComponent } from './components/account/login/login.component';
 
-
 const routes: Routes = [
     {
         path: '',
         pathMatch: 'full',
-        redirectTo: 'dashboard'
+        redirectTo: 'dashboard',
     },
     {
         path: 'account/login',
-        component: LoginComponent
+        component: LoginComponent,
     },
     {
         path: 'account/slug',
-        component: MyAccountComponent
+        component: MyAccountComponent,
     },
     {
         path: 'account/change-password',
-        component: ChangePasswordComponent
+        component: ChangePasswordComponent,
     },
     {
         path: 'account/create-account',
-        component: CreateAccountComponent
+        component: CreateAccountComponent,
     },
     {
         path: 'dashboard',
-        component: DashboardComponent
+        component: DashboardComponent,
     },
     {
         path: 'home',
-        component: LandingPageComponent
+        component: LandingPageComponent,
     },
     {
         path: 'add-school',
-        component: SchoolAddComponent
+        component: SchoolAddComponent,
     },
     {
         path: 'schools',
-        component: SchoolListComponent
+        component: SchoolListComponent,
     },
     {
         path: 'school/:id',
-        component: SchoolDetailComponent
-    }
-]
-
+        component: SchoolDetailComponent,
+    },
+];
 
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
+    exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

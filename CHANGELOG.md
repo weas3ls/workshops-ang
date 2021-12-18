@@ -4,29 +4,29 @@ In this version we introduced some breaking changes, please check `Breaking chan
 
 ### Breaking changes:
 
-- Inputs - removed `margin-bottom` styles from inputs with validation classes.
+-   Inputs - removed `margin-bottom` styles from inputs with validation classes.
 
 ### Fixes and improvements:
 
-- Select - dropdown will be correctly removed on component destroy,
-- Select - resolved problem with select-all option state on component initialization,
-- Select - resolved problem with selection of options with false values,
-- Dropdown - resolved problem with opening component on icon click,
-- Toasts/Alerts - resolved problem with z-index,
-- Popconfirm - resolved problem with `onClose` and `onConfirm` events,
-- Loading management - backdrop will be correctly removed on component destroy when fullscreen option is used,
-- Timepicker - resolved problem with setting default value using Angular form controls,
-- Datepicker - previous/next button disabled state will be now correctly updated on component initialization,
-- Datepicker/Timepicker - click on toggle button will no longer submit form,
-- Datepicker/Timepicker - resolved problems with `valueChanges` event and validation status updates,
-- Datatables - resolved problem with scroll position when component is rendered inside a tab.
+-   Select - dropdown will be correctly removed on component destroy,
+-   Select - resolved problem with select-all option state on component initialization,
+-   Select - resolved problem with selection of options with false values,
+-   Dropdown - resolved problem with opening component on icon click,
+-   Toasts/Alerts - resolved problem with z-index,
+-   Popconfirm - resolved problem with `onClose` and `onConfirm` events,
+-   Loading management - backdrop will be correctly removed on component destroy when fullscreen option is used,
+-   Timepicker - resolved problem with setting default value using Angular form controls,
+-   Datepicker - previous/next button disabled state will be now correctly updated on component initialization,
+-   Datepicker/Timepicker - click on toggle button will no longer submit form,
+-   Datepicker/Timepicker - resolved problems with `valueChanges` event and validation status updates,
+-   Datatables - resolved problem with scroll position when component is rendered inside a tab.
 
 ### New components:
 
-- [Accordion](https://mdbootstrap.com/docs/b5/angular/components/accordion/)
-- [Charts advanced](https://mdbootstrap.com/docs/b5/angular/data/charts-advanced/)
-- [Lightbox](https://mdbootstrap.com/docs/b5/angular/components/lightbox/)
-- [Smooth scroll](https://mdbootstrap.com/docs/b5/angular/methods/smooth-scroll/)
+-   [Accordion](https://mdbootstrap.com/docs/b5/angular/components/accordion/)
+-   [Charts advanced](https://mdbootstrap.com/docs/b5/angular/data/charts-advanced/)
+-   [Lightbox](https://mdbootstrap.com/docs/b5/angular/components/lightbox/)
+-   [Smooth scroll](https://mdbootstrap.com/docs/b5/angular/methods/smooth-scroll/)
 
 ---
 
@@ -36,25 +36,25 @@ In this version we introduced some breaking changes, please check `Breaking chan
 
 ### Breaking changes:
 
-- Popover - `[template]` input will now accept value of type `TemplateRef` and can be used to display `ng-template` content.
+-   Popover - `[template]` input will now accept value of type `TemplateRef` and can be used to display `ng-template` content.
 
 ### Fixes and improvements:
 
-- Toast - component will no longer throw error after reopening,
-- Toast - stacked components will now slide up automatically,
-- Sidenav - resolved problem with auto expand when route has route parameters,
-- Dropdown - opened menu will be now correctly destroyed on route change,
-- Table pagination - resolved problem with data automatic updates after change in `[entryOptions]` input.
+-   Toast - component will no longer throw error after reopening,
+-   Toast - stacked components will now slide up automatically,
+-   Sidenav - resolved problem with auto expand when route has route parameters,
+-   Dropdown - opened menu will be now correctly destroyed on route change,
+-   Table pagination - resolved problem with data automatic updates after change in `[entryOptions]` input.
 
 ### New components:
 
-- [Popconfirm](https://mdbootstrap.com/docs/b5/angular/components/popconfirm/)
-- [Lazy loading](https://mdbootstrap.com/docs/b5/angular/methods/lazy-loading/)
-- [Loading management](https://mdbootstrap.com/docs/b5/angular/methods/loading-management/)
+-   [Popconfirm](https://mdbootstrap.com/docs/b5/angular/components/popconfirm/)
+-   [Lazy loading](https://mdbootstrap.com/docs/b5/angular/methods/lazy-loading/)
+-   [Loading management](https://mdbootstrap.com/docs/b5/angular/methods/loading-management/)
 
 ### New features:
 
-- Popover - `[template]` input will now accept value of type `TemplateRef` and can be used to display `ng-template` content.
+-   Popover - `[template]` input will now accept value of type `TemplateRef` and can be used to display `ng-template` content.
 
 ---
 
@@ -64,26 +64,26 @@ In this version we introduced some breaking changes, please check `Breaking chan
 
 ### Breaking changes:
 
-- Changed `mdb-select-option` selector to `mdb-option`,
-- Removed `select-` prefix from option and option group class names,
-- Moved option and option group styles to individual file.
+-   Changed `mdb-select-option` selector to `mdb-option`,
+-   Removed `select-` prefix from option and option group class names,
+-   Moved option and option group styles to individual file.
 
 ### Fixes and improvements:
 
-- Sidenav - resolved problem with arrow icons in collapsed items,
-- Sidenav - resolved problem with z-index,
-- Select - resolved problem with dropdown toggle on arrow icon click,
-- Input - resolved problem with label position when setting value dynamically using Angular form controls.
+-   Sidenav - resolved problem with arrow icons in collapsed items,
+-   Sidenav - resolved problem with z-index,
+-   Select - resolved problem with dropdown toggle on arrow icon click,
+-   Input - resolved problem with label position when setting value dynamically using Angular form controls.
 
 ### New components:
 
-- [Autcomplete](https://mdbootstrap.com/docs/b5/angular/forms/autocomplete/)
-- [Infinite scroll](https://mdbootstrap.com/docs/b5/angular/methods/infinite-scroll/)
-- [Touch](https://mdbootstrap.com/docs/b5/angular/methods/touch/)
+-   [Autcomplete](https://mdbootstrap.com/docs/b5/angular/forms/autocomplete/)
+-   [Infinite scroll](https://mdbootstrap.com/docs/b5/angular/methods/infinite-scroll/)
+-   [Touch](https://mdbootstrap.com/docs/b5/angular/methods/touch/)
 
 ### New features:
 
-- Select - added new `[filterPlaceholder]` input that allow to change filter input placeholder.
+-   Select - added new `[filterPlaceholder]` input that allow to change filter input placeholder.
 
 ---
 
@@ -97,42 +97,42 @@ In this version we introduced some breaking changes, please check `Breaking chan
 
 ### Breaking changes:
 
-- Updated Angular to v12 (this version is now required),
-- Components, modules and types can no longer be imported from `mdb-angular-ui-kit` entry point. Use the newly added secondary entry points, such as `mdb-angular-ui-kit/checkbox` to import individual elements,
-- Removed main `MdbModule`, import individual modules from its entry points, for example: `import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox'`,
-- Renamed `MdbTimePickerComponent` to `MdbTimepickerComponent`,
-- Renamed `MdbTimePickerDirective` to `MdbTimepickerDirective`,
-- Renamed `MdbTimePickerModule` to `MdbTimepickerModule`,
-- Updated Bootstrap styles to the latest stable version.
+-   Updated Angular to v12 (this version is now required),
+-   Components, modules and types can no longer be imported from `mdb-angular-ui-kit` entry point. Use the newly added secondary entry points, such as `mdb-angular-ui-kit/checkbox` to import individual elements,
+-   Removed main `MdbModule`, import individual modules from its entry points, for example: `import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox'`,
+-   Renamed `MdbTimePickerComponent` to `MdbTimepickerComponent`,
+-   Renamed `MdbTimePickerDirective` to `MdbTimepickerDirective`,
+-   Renamed `MdbTimePickerModule` to `MdbTimepickerModule`,
+-   Updated Bootstrap styles to the latest stable version.
 
 ### Components redesign:
 
-- Redesigned shadows for components: Cards, Dropdowns, Modal, Popover, Toasts, Buttons, Button Group, Navbar, Pagination, Pills, Sidenav,
-- Redesigned padding for components: Alerts, Cards, List Group,
-- Redesigned border radius to 0.5rem for components: Alerts, Cards, Dropdowns, Modal, List group, Popover, Toasts, Dateipcker, Timepicker.
+-   Redesigned shadows for components: Cards, Dropdowns, Modal, Popover, Toasts, Buttons, Button Group, Navbar, Pagination, Pills, Sidenav,
+-   Redesigned padding for components: Alerts, Cards, List Group,
+-   Redesigned border radius to 0.5rem for components: Alerts, Cards, Dropdowns, Modal, List group, Popover, Toasts, Dateipcker, Timepicker.
 
 ### Fixes and improvements:
 
-- Sidenav - resolved problem with height of the element with `.sidenav-menu` class,
-- Range - resolved problem with a hardcoded `Example label` text,
-- Datepicker - `dateChanged` event will be now correctly emited on date change,
-- Datepicker - resolved problem with components updates on Angular form control changes,
-- File input - updated styles to Material Design styles,
-- Pills - fixed width of pills when they're filled or justified,
-- Checkbox/Switch/Radio - fix margin styles and positioning.
+-   Sidenav - resolved problem with height of the element with `.sidenav-menu` class,
+-   Range - resolved problem with a hardcoded `Example label` text,
+-   Datepicker - `dateChanged` event will be now correctly emited on date change,
+-   Datepicker - resolved problem with components updates on Angular form control changes,
+-   File input - updated styles to Material Design styles,
+-   Pills - fixed width of pills when they're filled or justified,
+-   Checkbox/Switch/Radio - fix margin styles and positioning.
 
 ### New components:
 
-- [Stepper](https://mdbootstrap.com/docs/b5/angular/components/stepper/)
-- [Sticky](https://mdbootstrap.com/docs/b5/angular/components/sticky/)
+-   [Stepper](https://mdbootstrap.com/docs/b5/angular/components/stepper/)
+-   [Sticky](https://mdbootstrap.com/docs/b5/angular/components/sticky/)
 
 ### New features:
 
-- Navbar - added a new `.navbar-nav-scroll` class to enable vertical scrolling when a collapsed navbar is opened,
-- Navbar - re-added `flex-grow` to the `.navbar-collapse` to restore the flexbox behaviors from v4 and prevent some content from being inadvertently squished,
-- List group - added a new `.list-group-numbered` variation to list groups that uses pseudo-elements for numbering list group items,
-- Shadows - added a new styles design: shadows soft, shadows standard, shadows strong,
-- Added color-scheme mixin.
+-   Navbar - added a new `.navbar-nav-scroll` class to enable vertical scrolling when a collapsed navbar is opened,
+-   Navbar - re-added `flex-grow` to the `.navbar-collapse` to restore the flexbox behaviors from v4 and prevent some content from being inadvertently squished,
+-   List group - added a new `.list-group-numbered` variation to list groups that uses pseudo-elements for numbering list group items,
+-   Shadows - added a new styles design: shadows soft, shadows standard, shadows strong,
+-   Added color-scheme mixin.
 
 ---
 
@@ -140,8 +140,8 @@ In this version we introduced some breaking changes, please check `Breaking chan
 
 ### New components:
 
-- [Datatables](https://mdbootstrap.com/docs/b5/angular/data/datatables/)
-- [Rating](https://mdbootstrap.com/docs/b5/angular/components/rating/)
+-   [Datatables](https://mdbootstrap.com/docs/b5/angular/data/datatables/)
+-   [Rating](https://mdbootstrap.com/docs/b5/angular/components/rating/)
 
 ---
 
@@ -149,13 +149,13 @@ In this version we introduced some breaking changes, please check `Breaking chan
 
 ### New components:
 
-- [Charts](https://mdbootstrap.com/docs/b5/angular/data/charts/)
+-   [Charts](https://mdbootstrap.com/docs/b5/angular/data/charts/)
 
 ### Bug fixes:
 
-- Animations - resolved problem with parameters in HTML template,
-- Sidenav - resolved problems with `mode` and `hidden` inputs,
-- Sidenav - resolved problem with `show` method.
+-   Animations - resolved problem with parameters in HTML template,
+-   Sidenav - resolved problems with `mode` and `hidden` inputs,
+-   Sidenav - resolved problem with `show` method.
 
 ---
 
@@ -163,15 +163,15 @@ In this version we introduced some breaking changes, please check `Breaking chan
 
 ### New components:
 
-- [Alerts](https://mdbootstrap.com/docs/b5/angular/components/alerts/)
-- [Carousel](https://mdbootstrap.com/docs/b5/angular/components/carousel)
-- [Toasts](https://mdbootstrap.com/docs/b5/angular/components/toasts)
+-   [Alerts](https://mdbootstrap.com/docs/b5/angular/components/alerts/)
+-   [Carousel](https://mdbootstrap.com/docs/b5/angular/components/carousel)
+-   [Toasts](https://mdbootstrap.com/docs/b5/angular/components/toasts)
 
 ### Bug fixes:
 
-- Datepicker - resolved problem with keyboard navigation when using `DownArrow` key,
-- Datepicker - resolved problem with selecting dates using `Enter/Space` keys in component with date filter,
-- Datepicker - added correct aria-labels to the previous/next buttons in the days view.
+-   Datepicker - resolved problem with keyboard navigation when using `DownArrow` key,
+-   Datepicker - resolved problem with selecting dates using `Enter/Space` keys in component with date filter,
+-   Datepicker - added correct aria-labels to the previous/next buttons in the days view.
 
 ---
 
@@ -179,8 +179,8 @@ In this version we introduced some breaking changes, please check `Breaking chan
 
 ### New components:
 
-- [Datepicker](https://mdbootstrap.com/docs/b5/angular/forms/datepicker/)
-- [Timepicker](https://mdbootstrap.com/docs/b5/angular/forms/timepicker)
+-   [Datepicker](https://mdbootstrap.com/docs/b5/angular/forms/datepicker/)
+-   [Timepicker](https://mdbootstrap.com/docs/b5/angular/forms/timepicker)
 
 ---
 
@@ -188,26 +188,26 @@ In this version we introduced some breaking changes, please check `Breaking chan
 
 ### New components:
 
-- [Range](https://mdbootstrap.com/docs/b5/angular/forms/range/)
-- [File](https://mdbootstrap.com/docs/b5/angular/forms/file)
-- [Switch](https://mdbootstrap.com/docs/b5/angular/forms/switch/)
-- [Input group](https://mdbootstrap.com/docs/b5/angular/forms-input-group/)
-- [Pills](https://mdbootstrap.com/docs/b5/angular/navigation/pills/)
-- [Tabs](https://mdbootstrap.com/docs/b5/angular/navigation/tabs/)
+-   [Range](https://mdbootstrap.com/docs/b5/angular/forms/range/)
+-   [File](https://mdbootstrap.com/docs/b5/angular/forms/file)
+-   [Switch](https://mdbootstrap.com/docs/b5/angular/forms/switch/)
+-   [Input group](https://mdbootstrap.com/docs/b5/angular/forms-input-group/)
+-   [Pills](https://mdbootstrap.com/docs/b5/angular/navigation/pills/)
+-   [Tabs](https://mdbootstrap.com/docs/b5/angular/navigation/tabs/)
 
 ### Bug fixes:
 
-- Scrollspy - added `cursor: pointer` styles to scrollspy links,
-- Sidenav - resolved problem with errors when `RouterModule` is not imported,
-- Sidenav - component will be correctly updated on inputs changes,
-- Sidenav - resolved problem with scroll position,
-- Sidenav - added components and module exports to main library index.
+-   Scrollspy - added `cursor: pointer` styles to scrollspy links,
+-   Sidenav - resolved problem with errors when `RouterModule` is not imported,
+-   Sidenav - component will be correctly updated on inputs changes,
+-   Sidenav - resolved problem with scroll position,
+-   Sidenav - added components and module exports to main library index.
 
 ### New features:
 
-- Animations - added new animations: `slideLeft`, `slideRight`, `slideUp`, `slideDown`,
-- Sidenav - added focus trap,
-- Sidenav - escape button will now close the component.
+-   Animations - added new animations: `slideLeft`, `slideRight`, `slideUp`, `slideDown`,
+-   Sidenav - added focus trap,
+-   Sidenav - escape button will now close the component.
 
 ---
 
@@ -215,22 +215,22 @@ In this version we introduced some breaking changes, please check `Breaking chan
 
 ### New components:
 
-- [Animations](https://mdbootstrap.com/docs/b5/angular/content-styles/animations/)
-- [Ripple](https://mdbootstrap.com/docs/b5/angular/methods/ripple/)
-- [Sidenav](https://mdbootstrap.com/docs/b5/angular/navigation/sidenav/)
-- [Scrollspy](https://mdbootstrap.com/docs/b5/angular/navigation/scrollbar/)
-- [Validation](https://mdbootstrap.com/docs/b5/angular/forms/validation/)
+-   [Animations](https://mdbootstrap.com/docs/b5/angular/content-styles/animations/)
+-   [Ripple](https://mdbootstrap.com/docs/b5/angular/methods/ripple/)
+-   [Sidenav](https://mdbootstrap.com/docs/b5/angular/navigation/sidenav/)
+-   [Scrollspy](https://mdbootstrap.com/docs/b5/angular/navigation/scrollbar/)
+-   [Validation](https://mdbootstrap.com/docs/b5/angular/forms/validation/)
 
 ### Bug fixes:
 
-- Select - `x options selected` text will be displayed correctly when more than 5 options have been selected,
-- Select - fixed clear button focusing issue.
+-   Select - `x options selected` text will be displayed correctly when more than 5 options have been selected,
+-   Select - fixed clear button focusing issue.
 
 ### New features:
 
-- Select - added new `displayedLabels` input that allows to change maximum number of comma-separated options labels displayed in the multiselect input,
-- Select - added new `optionsSelectedLabel` input that allows to customize x options selected text,
-- Select - added new `filterDebounce` input that allows to add delay to the options list updates when using filter input
+-   Select - added new `displayedLabels` input that allows to change maximum number of comma-separated options labels displayed in the multiselect input,
+-   Select - added new `optionsSelectedLabel` input that allows to customize x options selected text,
+-   Select - added new `filterDebounce` input that allows to add delay to the options list updates when using filter input
 
 ---
 
@@ -238,10 +238,10 @@ In this version we introduced some breaking changes, please check `Breaking chan
 
 ### New components:
 
-- [Dropdown](https://mdbootstrap.com/docs/b5/angular/components/dropdowns/)
-- [Modal](https://mdbootstrap.com/docs/b5/angular/components/modal/)
-- [Select](https://mdbootstrap.com/docs/b5/angular/forms/select/)
-- [Scrollbar](https://mdbootstrap.com/docs/b5/angular/methods/scrollbar/)
+-   [Dropdown](https://mdbootstrap.com/docs/b5/angular/components/dropdowns/)
+-   [Modal](https://mdbootstrap.com/docs/b5/angular/components/modal/)
+-   [Select](https://mdbootstrap.com/docs/b5/angular/forms/select/)
+-   [Scrollbar](https://mdbootstrap.com/docs/b5/angular/methods/scrollbar/)
 
 ---
 
@@ -249,11 +249,11 @@ In this version we introduced some breaking changes, please check `Breaking chan
 
 ### New components:
 
-- [Popover](https://mdbootstrap.com/docs/b5/angular/components/popovers/)
-- [Tooltip](https://mdbootstrap.com/docs/b5/angular/components/tooltips/)
-- [Checkbox](https://mdbootstrap.com/docs/b5/angular/forms/checkbox/)
-- [Input](https://mdbootstrap.com/docs/b5/angular/forms/input-fields/)
-- [Radio](https://mdbootstrap.com/docs/b5/angular/forms/radio/)
+-   [Popover](https://mdbootstrap.com/docs/b5/angular/components/popovers/)
+-   [Tooltip](https://mdbootstrap.com/docs/b5/angular/components/tooltips/)
+-   [Checkbox](https://mdbootstrap.com/docs/b5/angular/forms/checkbox/)
+-   [Input](https://mdbootstrap.com/docs/b5/angular/forms/input-fields/)
+-   [Radio](https://mdbootstrap.com/docs/b5/angular/forms/radio/)
 
 ---
 
@@ -263,23 +263,23 @@ The initial release of MDB 5 Angular Alpha 1.
 
 ### New components:
 
-- [Badges](https://mdbootstrap.com/docs/b5/angular/components/badges/)
-- [Buttons](https://mdbootstrap.com/docs/b5/angular/components/buttons/)
-- [Button Group](https://mdbootstrap.com/docs/b5/angular/components/button-group/)
-- [Cards](https://mdbootstrap.com/docs/b5/angular/components/cards/)
-- [Collapse](https://mdbootstrap.com/docs/b5/angular/components/collapse/)
-- [List Group](https://mdbootstrap.com/docs/b5/angular/components/list-group/)
-- [Progress](https://mdbootstrap.com/docs/b5/angular/components/progress/)
-- [Spinners](https://mdbootstrap.com/docs/b5/angular/components/spinners/)
-- [Tables](https://mdbootstrap.com/docs/b5/angular/data/tables/)
-- [Breadcrumb](https://mdbootstrap.com/docs/b5/angular/navigation/breadcrumb/)
-- [Footer](https://mdbootstrap.com/docs/b5/angular/navigation/footer/)
-- [Headers](https://mdbootstrap.com/docs/b5/angular/navigation/headers/)
-- [Navbar](https://mdbootstrap.com/docs/b5/angular/navigation/navbar/)
-- [Pagination](https://mdbootstrap.com/docs/b5/angular/navigation/pagination/)
+-   [Badges](https://mdbootstrap.com/docs/b5/angular/components/badges/)
+-   [Buttons](https://mdbootstrap.com/docs/b5/angular/components/buttons/)
+-   [Button Group](https://mdbootstrap.com/docs/b5/angular/components/button-group/)
+-   [Cards](https://mdbootstrap.com/docs/b5/angular/components/cards/)
+-   [Collapse](https://mdbootstrap.com/docs/b5/angular/components/collapse/)
+-   [List Group](https://mdbootstrap.com/docs/b5/angular/components/list-group/)
+-   [Progress](https://mdbootstrap.com/docs/b5/angular/components/progress/)
+-   [Spinners](https://mdbootstrap.com/docs/b5/angular/components/spinners/)
+-   [Tables](https://mdbootstrap.com/docs/b5/angular/data/tables/)
+-   [Breadcrumb](https://mdbootstrap.com/docs/b5/angular/navigation/breadcrumb/)
+-   [Footer](https://mdbootstrap.com/docs/b5/angular/navigation/footer/)
+-   [Headers](https://mdbootstrap.com/docs/b5/angular/navigation/headers/)
+-   [Navbar](https://mdbootstrap.com/docs/b5/angular/navigation/navbar/)
+-   [Pagination](https://mdbootstrap.com/docs/b5/angular/navigation/pagination/)
 
 ### New sections:
 
-- Layout
-- Utilities
-- Content & styles
+-   Layout
+-   Utilities
+-   Content & styles

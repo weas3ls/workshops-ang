@@ -5,21 +5,18 @@ import { ParticipantsModalComponent } from '../participants-modal/participants-m
 @Component({
     selector: 'app-school-detail',
     templateUrl: './school-detail.component.html',
-    styleUrls: ['./school-detail.component.scss']
+    styleUrls: ['./school-detail.component.scss'],
 })
 export class SchoolDetailComponent implements OnInit {
-
     modalRef: MdbModalRef<ParticipantsModalComponent>;
 
-    constructor(private modalService: MdbModalService) { }
+    constructor(private modalService: MdbModalService) {}
 
-    ngOnInit(): void {
-    }
+    ngOnInit(): void {}
 
     openModal(): void {
         this.modalRef = this.modalService.open(ParticipantsModalComponent, {
-            modalClass: 'modal-lg'
+            modalClass: 'modal-lg',
         });
     }
-
 }
